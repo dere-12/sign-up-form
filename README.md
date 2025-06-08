@@ -19,7 +19,7 @@ A responsive and modern sign-up form project built as part of The Odin Project c
 
 ### Running Locally
 
-1. Clone or download this repository from [here] (https://github.com/dere-12/sign-up-form.git).
+1. Clone or download this repository from [here](https://github.com/dere-12/sign-up-form.git).
 2. Open `index.html` in your browser.
 
 ### Live Preview
