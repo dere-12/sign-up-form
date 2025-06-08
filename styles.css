@@ -1,3 +1,138 @@
+@font-face {
+  font-family: myFont;
+  src: url(assets/font/Norse-Bold.otf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+input,
+button {
+  font: inherit;
+}
+
 body {
-  color: green;
+  font-family: sans-serif, monospace;
+  background-color: rgb(8, 8, 22);
+}
+
+.container {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  margin: 0 auto;
+}
+
+aside {
+  width: 35%;
+  height: 100%;
+  background: url(assets/image/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  color: #fff;
+  position: relative;
+}
+
+main {
+  width: 65%;
+  height: 100%;
+  background-color: #fff;
+}
+
+aside .logo-container {
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 9rem;
+}
+
+aside .logo-container div:last-child {
+  font-family: myFont, monospace, sans-serif;
+  font-size: 4.5rem;
+}
+
+aside > p {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 30%;
+  font-size: x-small;
+}
+
+aside p a {
+  color: #fff;
+}
+
+aside p a:hover {
+  text-decoration: none;
+}
+
+main > section:first-child {
+  width: 100%;
+  height: 240px;
+  background-color: rgb(247, 247, 247);
+  padding: 6rem 8rem 8rem 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+  padding-left: 2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+main > section:first-child p {
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  display: flex;
+  gap: 5rem;
+  padding-left: 2rem;
+  font-size: 11px;
+}
+
+.form-container > div input {
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+  width: 200px;
+  padding: 5px;
+}
+
+input:required:invalid {
+  border-color: red;
+}
+
+.form-container > div input:focus {
+  outline-color: blue;
+}
+
+.form-bottom {
+  background-color: rgb(247, 247, 247);
+  padding: 1rem 2rem;
+  margin-top: 6px;
+  height: calc(100vh - 460px);
+  font-size: smaller;
+  box-shadow: inset 0 3px 5px rgba(46, 46, 46, 0.24);
+}
+
+.form-bottom button {
+  background-color: #596d48;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 2.7rem;
+  margin: 0.8rem 0 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-bottom p span {
+  color: #425333;
+  font-weight: 600;
+  cursor: pointer;
 }

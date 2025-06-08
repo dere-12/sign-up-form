@@ -7,6 +7,80 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <div class="container">
+      <aside>
+        <div class="logo-container">
+          <div>
+            <img
+              src="assets/logo/odin-lined.png"
+              alt="The Odin Project site logo."
+              width="65px"
+              height="80%"
+            />
+          </div>
+          <div>ODIN</div>
+        </div>
+        <p>
+          Photo by
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+            target="_blank"
+            >Halie West on Unsplash</a
+          >
+        </p>
+      </aside>
+
+      <main>
+        <section>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started.
+          </p>
+          <p>You <i>know</i> you want to.</p>
+        </section>
+
+        <section>
+          <h2>Let's do this!</h2>
+          <form>
+            <div class="form-container">
+              <div>
+                <div>
+                  <label for="fname">FIRST NAME</label>
+                </div>
+                <input type="text" id="fname" />
+                <div>
+                  <label for="email">EMAIL</label>
+                </div>
+                <input type="email" id="email" />
+                <div>
+                  <label for="pass">PASSWORD</label>
+                </div>
+                <input type="password" id="pass" required />
+              </div>
+              <div>
+                <div>
+                  <label for="lname">LAST NAME</label>
+                </div>
+                <input type="text" id="lname" />
+                <div>
+                  <label for="phone">PHONE NUMBER</label>
+                </div>
+                <input type="tel" id="phone" />
+                <div>
+                  <label for="con-pass">CONFIRM PASSWORD</label>
+                </div>
+                <input type="password" id="con-pass" required />
+              </div>
+            </div>
+
+            <div class="form-bottom">
+              <button>Create Account</button>
+              <p>Already have an account? <span>Log in</span></p>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
